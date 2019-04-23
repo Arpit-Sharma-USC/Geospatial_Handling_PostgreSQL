@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Nearest Neighbors</name>
+<description>Nearest Neighbours</description>
+<Style id="yellowLineGreenPoly">
+<LineStyle>
+<color>a00000ff</color>
+<width>10</width>
+</LineStyle>
+<PolyStyle>
+<color>7f000000</color>
+</PolyStyle>
+</Style>
+
+<Placemark>
+<name>Four nearest neighbors to my home</name>
+<styleUrl>#yellowLineGreenPoly</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>-118.28218817710878,34.025743429140626,2357
+-118.284430503845,34.0255122391218,2357
+</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>Four nearest neighbors to my home.</name>
+<styleUrl>#yellowLineGreenPoly</styleUrl>
+<LineString>
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>-118.28218817710878,34.025743429140626,2357
+-118.279296755791,34.0234315006103,2357
+</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>Four nearest neighbors to my home.</name>
+<styleUrl>#yellowLineGreenPoly</styleUrl>
+<LineString>
+
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>-118.28218817710878,34.025743429140626,2357
+-118.283078670502,34.0214529732999,2357
+</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>Four nearest neighbors to my home.</name>
+<styleUrl>#yellowLineGreenPoly</styleUrl>
+<LineString>
+
+<extrude>1</extrude>
+<tessellate>1</tessellate>
+<coordinates>-118.28218817710878,34.025743429140626,2357
+-118.28534245491,34.0204748079292,2357
+</coordinates>
+</LineString>
+</Placemark>
+
+
+</Document>
+</kml>

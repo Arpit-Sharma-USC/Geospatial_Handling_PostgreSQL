@@ -1,0 +1,22 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var R=8, r=1, a=4;
+var p_x=34.021194;
+var p_y=-118.289219;
+var x0=R+r-a, y0=0;
+
+var cos=Math.cos, sin=Math.sin, pi=Math.PI, nRev=16;
+
+for(var t=0.0;t<(pi*nRev);t+=0.01){
+var x = (R+r)*cos((r/R)*t) - a*cos((1+r/R)*t);
+var y = (R+r)*sin((r/R)*t) - a*sin((1+r/R)*t);
+x=x/10000 + p_x;
+y=y/10000 +p_y;
+document.write(y+","+x+",0<br>");
+
+}
+</script>
+</head>
+</html>

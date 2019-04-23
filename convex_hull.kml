@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<Style id="transBluePoly">
+<LineStyle>
+<width>1.5</width>
+</LineStyle>
+<PolyStyle>
+<color>7dff0000</color>
+
+</PolyStyle>
+</Style>
+<Placemark>
+<name>Convex Hull</name>
+<styleUrl>#transBluePoly</styleUrl>
+<Polygon>
+<extrude>1</extrude>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>
+-118.28126013279,34.0193899204245,
+-118.282939195633,34.0194299370132,
+-118.289607167244,34.0209950154616,
+-118.292058706284,34.0227734786687,
+-118.291844129562,34.0256322801717,
+-118.282188177109,34.0257434291406,
+-118.279296755791,34.0234315006103,
+-118.28126013279,34.0193899204245
+</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon>
+</Placemark>
+</Document>
+</kml>

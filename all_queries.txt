@@ -1,0 +1,46 @@
+
+--Convex hull query
+
+SELECT ST_AsText(ST_ConvexHull(ST_Collect(ST_GeomFromText('MULTIPOINT(-118.28293919563295 34.019429937013165,
+-118.28443050384523 34.025512239121795,-118.28218817710878 34.025743429140626,-118.29205870628358 34.02277347866874,-118.2864421606064 34.02080827466292,-118.28960716724397 34.02099501546155,-118.28726828098299 34.02130624921294,-118.29184412956239 34.02563228017173,-118.28307867050172 34.021452973299894,-118.28126013278963 34.01938992042451,-118.27929675579072 34.02343150061027,-118.28534245491029 34.02047480792917)'))) );
+
+--Nearest neighbors Creation and insertion
+
+create table spatial_my_map(location varchar(50), coordinates geometry);
+
+
+
+insert into spatial_my_map values('Widney Alumni House',ST_GeomFromText('POINT(-118.28293919563295 34.019429937013165)'));
+
+insert into spatial_my_map values('Target',ST_GeomFromText('POINT(-118.28443050384523 34.025512239121795)'));
+
+insert into spatial_my_map values('Troy Hall',ST_GeomFromText('POINT(-118.28218817710878 34.025743429140626)'));
+
+insert into spatial_my_map values('Smart and Final',ST_GeomFromText('POINT(-118.29205870628358 34.02277347866874)'));
+
+insert into spatial_my_map values('USC Bookstore',ST_GeomFromText('POINT(-118.2864421606064 34.02080827466292)'));
+
+insert into spatial_my_map values('OHE',ST_GeomFromText('POINT(-118.28960716724397 34.02099501546155)'));
+
+insert into spatial_my_map values('Cromwell Field',ST_GeomFromText('POINT(-118.28726828098299 34.02130624921294)'));
+
+insert into spatial_my_map values('Church of Jesus',ST_GeomFromText('POINT(-118.29184412956239 34.02563228017173)'));
+
+insert into spatial_my_map values('Leavey Library',ST_GeomFromText('POINT(-118.28307867050172 34.021452973299894)'));
+
+insert into spatial_my_map values('USC Hotel',ST_GeomFromText('POINT(-118.28126013278963 34.01938992042451)'));
+
+insert into spatial_my_map values('CVS',ST_GeomFromText('POINT(-118.27929675579072 34.02343150061027)'));
+
+insert into spatial_my_map values('Tommy Trojan',ST_GeomFromText('POINT(-118.28534245491029 34.02047480792917)'));	
+
+--view the table results						
+	
+
+select location, ST_AsText(coordinates) from spatial_my_map order by location;
+
+--nearest neighbors query home: -118.28218817710878,34.025743429140626
+
+SELECT location, ST_AsText(coordinates) as coordinates FROM spatial_my_map ORDER BY
+ ST_AsText(coordinates) <-> st_setsrid(st_makepoint(-118.28218817710878,34.025743429140626),0) LIMIT 4 offset 
+1;

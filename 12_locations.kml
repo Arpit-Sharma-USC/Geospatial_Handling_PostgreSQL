@@ -1,0 +1,72 @@
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="#highlightPlacemark">
+
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+
+</Style>
+
+<Placemark><name>Target</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28443050384523,34.025512239121795</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Home Troy Hall</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28218817710878,34.025743429140626</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Widney House</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28293919563295,34.019429937013165</coordinates></Point>
+</Placemark>
+
+<Placemark><name>CVS</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.27929675579072,34.02343150061027</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Tommy Trojan</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28534245491029,34.02047480792917</coordinates></Point>
+</Placemark>
+
+<Placemark><name>USC Bookstore</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.2864421606064,34.02080827466292</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Cromwell Field</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28726828098299,34.02130624921294</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Church of Jesus</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.29184412956239,34.02563228017173</coordinates></Point>
+</Placemark>
+
+<Placemark><name>OHE</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28960716724397,34.02099501546155</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Leavey Library</name>
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28307867050172,34.021452973299894</coordinates></Point>
+</Placemark>
+
+<Placemark><name>Smart and Final</name>
+
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.29205870628358,34.02277347866874</coordinates></Point>
+</Placemark>
+
+<Placemark><name>USC Hotel</name>
+
+<styleUrl>#highlightPlacemark</styleUrl>
+<Point><coordinates>-118.28126013278963,34.01938992042451</coordinates></Point>
+</Placemark>
+
+</Document>
+</kml>
